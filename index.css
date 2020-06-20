@@ -7,7 +7,7 @@
 body {
   position: relative;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,6 +32,10 @@ body {
 
 .sticky {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+  width: 80%;
 }
 
 .navbar {
@@ -76,12 +80,9 @@ h1 {
 }
 
 .story {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #363636;
   color: #fff;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 78px;
 }
 
@@ -114,7 +115,7 @@ img {
   text-align: center;
   color: #f8be2a;
   margin-top: 0;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 .team {
@@ -131,7 +132,7 @@ img {
 }
 
 .team h2 {
-  padding: 20px 0;
+  padding-bottom: 30px;
 }
 
 .icon {
@@ -158,6 +159,10 @@ img {
 .customers {
   background-color: #111;
   padding-top: 78px;
+}
+
+.customers h2 {
+  margin-bottom: 30px;
 }
 
 .mySlides {
@@ -207,14 +212,14 @@ img {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 6.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 6.5s;
 }
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
@@ -223,7 +228,7 @@ img {
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
@@ -234,9 +239,9 @@ img {
   position: relative;
   background-image: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.8) 50%,
-      rgba(0, 0, 0, 0.8) 100%
+      rgba(0, 0, 0, 0.83) 0%,
+      rgba(0, 0, 0, 0.83) 50%,
+      rgba(0, 0, 0, 0.83) 100%
     ),
     url("./assets/footer-background.png");
   height: auto;
@@ -253,6 +258,7 @@ img {
 
 .info img {
   width: 20px;
+  margin-right: 20px;
 }
 
 .info {
@@ -275,6 +281,14 @@ footer h3,
 }
 
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
   .navbar-light .navbar-nav .nav-link,
   .top-link {
     display: flex;
@@ -313,6 +327,11 @@ footer h3,
   .story p {
     font-size: 1rem;
     line-height: 150%;
+  }
+
+  .story,
+  .team {
+    padding-top: 30px;
   }
 
   .offer p {
@@ -354,7 +373,12 @@ footer h3,
   }
 
   .offers {
+    padding-top: 30px;
     padding-bottom: 40px;
+  }
+
+  #footer-logo {
+    width: 30%;
   }
 }
 
